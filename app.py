@@ -4,6 +4,8 @@ import io
 
 app = Flask(__name__)
 
+# Ruta principal: muestra el QR directamente al abrir el enlace de Vercel
+@app.route('/', methods=['GET'])
 @app.route('/api/generate', methods=['GET'])
 def generate_qr():
     text_to_encode = request.args.get('text', 'https://github.com')
