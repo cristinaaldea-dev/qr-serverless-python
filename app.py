@@ -1,4 +1,4 @@
-﻿from flask import Flask, request, send_file
+from flask import Flask, request, send_file
 import qrcode
 import io
 
